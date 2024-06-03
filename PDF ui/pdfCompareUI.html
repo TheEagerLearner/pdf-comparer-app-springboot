@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Spring Boot API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Compare Files</h1>
+    <div class="input-group">
+      <div class="input-field">
+        <label for="file1">Select first PDF</label>
+        <input type="file" id="file1" accept=".pdf" class="file-input">
+      </div>
+      <div class="input-field">
+        <label for="file2">Select second PDF</label>
+        <input type="file" id="file2" accept=".pdf" class="file-input">
+      </div>
+    </div>
+    <button onclick="compareFiles()" class="compare-btn">Compare</button>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
